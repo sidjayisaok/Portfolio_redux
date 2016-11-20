@@ -6,6 +6,10 @@ img {
   width: 20%;
 }
 
+.alert-success{
+  box-shadow: 5px 10px;
+}
+
 @media (min-width: 480px) {
   .centerPhoto {
     left: inherit;
