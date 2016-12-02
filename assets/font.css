@@ -7,11 +7,15 @@ img {
 }
 
 .alert-info{
-  box-shadow: 5px 5px;
+  box-shadow: 1px 2px 3px;
 }
 
 .alert-warning{
-  box-shadow: 10px 10px;
+  box-shadow: 2px 4px 6px;
+}
+
+.alert-danger{
+  box-shadow: 3px 6px 9px;
 }
 
 @media (min-width: 480px) {
