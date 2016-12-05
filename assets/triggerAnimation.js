@@ -40,7 +40,7 @@ $(document).ready(function(){
   $('#twitter').css('opacity', 0);
   //load element on scroll
   $('#twitter').waypoint(function() {
-      $('#twitter').addClass('animated fadeInRight');
+      $('#twitter').addClass('animated fadeInLeft');
   }, { offset: '90%' });
 
    // hide element on page load
@@ -54,7 +54,7 @@ $(document).ready(function(){
   $('#wordpress').css('opacity', 0);
   //load element on scroll
   $('#wordpress').waypoint(function() {
-      $('#wordpress').addClass('animated fadeInRight');
+      $('#wordpress').addClass('animated fadeInLeft');
   }, { offset: '90%' });
  
 });
