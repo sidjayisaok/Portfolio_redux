@@ -12,7 +12,7 @@ $(document).ready(function(){
   $('#melange').css('opacity', 0);
   //load element on scroll
   $('#melange').waypoint(function() {
-      $('#melange').addClass('animated fadeInRight');
+      $('#melange').addClass('animated fadeInLeft');
   }, { offset: '50%' });
 
   // hide element on page load
@@ -26,7 +26,7 @@ $(document).ready(function(){
   $('#sniphy').css('opacity', 0);
   //load element on scroll
   $('#sniphy').waypoint(function() {
-      $('#sniphy').addClass('animated fadeInRight');
+      $('#sniphy').addClass('animated fadeInLeft');
   }, { offset: '50%' });
 
    // hide element on page load
