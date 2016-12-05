@@ -1,3 +1,4 @@
+//work on making this DRY in the future
 $(function(){
     let flipClass = "animated zoomOut";
     let turnClass = "animated flip";
