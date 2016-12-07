@@ -10,7 +10,7 @@ $(document).ready(function(){
  var twitter = '#twitter';
  var github = '#github';
  var wordpress = '#wordpress';
- var offsetA = '50%';
+ var offsetA = '75%';
  var offsetB = '90%';
 
  //function to execute animations when they appear on the screen via waypoint.js
