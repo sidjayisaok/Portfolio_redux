@@ -89,37 +89,87 @@
 			<div class="row container">
 				<div class="col-sm-3" id="banner">
 					<div class="alert alert-info">
-					<div><h6>Coming Soon!</h6></div>
-					<hr>
-					<img src="assets/bloglogo.png" alt="picture" class="image-responsive site1">
+						<div><h6>Coming Soon!</h6></div>
+						<hr>
+						<button type="button" class="btn btn-default btn-info btn-sm" data-toggle="modal" data-target="#blogModal"><img src="assets/bloglogo.png" alt="picture" class="image-responsive site1"></button>
 					</div>
 				</div>
+					<!--blog modal-->
+					<div class="modal fade" id="blogModal" role="dialog">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content alert alert-info">
+								<p>More to come soon.</p>	
+							</div>
+						</div>
+					</div>
 			
 
 				<div class="col-sm-3" id="melange">
 					<div class="alert alert-info">
-					<div><h6><a href="https://melangeapp.herokuapp.com/">Melange: a d3.js project</a></h6></div>
-					<hr>
-					<a href="https://melangeapp.herokuapp.com/"><img src="assets/Melange.png" alt="picture" class="image-responsive site2"></a>
+						<div><h6><a href="https://melangeapp.herokuapp.com/">Melange: a d3.js project</a></h6></div>
+						<hr>
+						<button type="button" class="btn btn-info btn-default btn-sm" data-toggle="modal" data-target="#melangeModal"><img src="assets/Melange.png" alt="picture" class="image-responsive site2"></button>
 					</div>
 				</div>
+
+				<!--melange modal-->
+					<div class="modal fade" id="melangeModal" role="dialog">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content alert alert-info">
+								<h3><p>Melange</p></h3>
+								<img src="assets/Melange.png" alt="picture" class="image-responsive site2">
+								<hr>
+								<p>A website using d3.js to display information for several tools.</p> 
+								<p>The Websites include a restaurant calculator, a currency converter, a restaurant ratings aggregator, and a BMI calculator</p>
+								<p>Technology used: Bootstrap, d3.js, animate.css, node.js, and more</p>
+							</div>
+						</div>
+					</div>
 
 				<div class="col-sm-3" id="movieGazer">
 					<div class="alert alert-info">
-					<div><h6><a href="https://moviegazer-b969d.firebaseapp.com/">Movie Gazer: movie synopses</a></h6></div>
-					<hr>
-					<a href="https://moviegazer-b969d.firebaseapp.com/"><img src="assets/MovieGazer.png" alt="picture" class="image-responsive site3"></a>
+						<div><h6><a href="https://moviegazer-b969d.firebaseapp.com/">Movie Gazer: movie synopses</a></h6></div>
+						<hr>
+						<button type="button" class="btn btn-info btn-default btn-sm" data-toggle="modal" data-target="#gazerModal"><img src="assets/MovieGazer.png" alt="picture" class="image-responsive site3"></button>
 					</div>
 				</div>
 
+				<!--Movie Gazer modal-->
+					<div class="modal fade" id="gazerModal" role="dialog">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content alert alert-info">
+								<h3><p>Movie Gazer</p></h3>
+								<img src="assets/MovieGazer.png" alt="picture" class="image-responsive site3">
+								<hr>
+								<p>A website aggregating movie reviews using wikipedia and IMDb.</p> 
+								<p>The website is constantly in evolution, as I add more features to it that I learn.</p>
+								<p>Technology used: Bootstrap, d3.js, animate.css, and more.</p>
+							</div>
+						</div>
+					</div>
+
 				<div class="col-sm-3" id="sniphy">
 					<div class="alert alert-info">
-					<div><h6><a href="https://thawing-retreat-41371.herokuapp.com/?">Sniphy: random gifs</a></h6></div>
-					<hr>
-					<a href="https://thawing-retreat-41371.herokuapp.com/?"><img src="assets/Sniphy.png" alt="picture" class="image-responsive site4"></a>
+						<div><h6><a href="https://thawing-retreat-41371.herokuapp.com/?">Sniphy: random gifs</a></h6></div>
+						<hr>
+						<button type="button" class="btn btn-default btn-info btn-sm" data-toggle="modal" data-target="#sniphyModal"><img src="assets/Sniphy.png" alt="picture" class="image-responsive site4"></button>
 					</div>
 				</div>
-		</div>
+
+				<!--sniphy modal-->
+					<div class="modal fade" id="sniphyModal" role="dialog">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content alert alert-info">
+								<h3><p>Sniphy</p></h3>
+								<img src="assets/Sniphy.png" alt="picture" class="image-responsive site4">
+								<hr>
+								<p>A website returning gifs via Giphy.</p> 
+								<p>The website is designed to be simple to use, allowing users to play and pause gifs, and share links to friends.</p>
+								<p>Technology used: Bootstrap, animate.css, and more.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			<div class="container">
 				<br>
@@ -135,8 +185,8 @@
 					<div class="modal-dialog modal-sm">
 					<div class="modal-content alert alert-warning">
 						<div class="modal-header alert alert-warning">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Contact information</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Contact information</h4>
 						</div>
 						<div class="modal-body alert alert-danger">
 							<h5><p class="text-muted text-center">
