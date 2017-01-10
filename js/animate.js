@@ -13,7 +13,7 @@ var image1 = '.image1';
 var image2 = '.image2';
 var image3 = '.image3';
 var image4 = '.image4';
-
+var logo = '#logo';
 
 //DRY version to control image animation
 function logicAnim(param, classA, classB){
@@ -51,4 +51,6 @@ logicAnim(image2, flipClass, tadaClass);
 logicAnim(image3, flipClass, tadaClass);
 
 logicAnim(image4, flipClass, tadaClass);
+
+logicAnim(logo, flipClass, tadaClass);
 
