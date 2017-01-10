@@ -16,7 +16,10 @@ img {
 
 .alert-info{
   box-shadow: 1px 2px 3px;
-  height: 150px;
+}
+
+#restrictHeight{
+    height: 150px;
 }
 
 .alert-warning{
