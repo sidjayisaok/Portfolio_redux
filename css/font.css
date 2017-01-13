@@ -7,11 +7,23 @@ a{
 }
 
 button{
-  box-shadow: 1px 2px 3px #001688;
+  background-color: #EEFFFF;
+  box-shadow: 1px 2px 3px #EEFFFF;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 25%;
 }
 
-img {
+button:hover{
+  background-color: #F5FFFF;
+}
+
+img{
   width: 25%;
+}
+
+#myBtn{
+  height: 50px;
 }
 
 .alert-info{
@@ -26,7 +38,7 @@ img {
   box-shadow: 2px 4px 6px;
 }
 
-aside{
+aside, section{
   background-color: #DEFFFF;
 }
 

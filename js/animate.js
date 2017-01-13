@@ -14,6 +14,12 @@ var image2 = '.image2';
 var image3 = '.image3';
 var image4 = '.image4';
 var logo = '#logo';
+var contactBtn = ".contactBtn";
+var closeBtn = ".closeBtn";
+var heartBtn = ".heartBtn";
+var melangeBtn = ".melangeBtn";
+var gazerBtn = ".gazerBtn";
+var sniphyBtn = ".sniphyBtn";
 
 //DRY version to control image animation
 function logicAnim(param, classA, classB){
@@ -53,4 +59,16 @@ logicAnim(image3, flipClass, tadaClass);
 logicAnim(image4, flipClass, tadaClass);
 
 logicAnim(logo, flipClass, tadaClass);
+
+logicAnim(contactBtn, flipClass, tadaClass);
+
+logicAnim(closeBtn, flipClass, tadaClass);
+
+logicAnim(heartBtn, flipClass, tadaClass);
+
+logicAnim(melangeBtn, flipClass, tadaClass);
+
+logicAnim(gazerBtn, flipClass, tadaClass);
+
+logicAnim(sniphyBtn, flipClass, tadaClass);
 
