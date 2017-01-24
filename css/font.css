@@ -1,5 +1,6 @@
 .text-muted{
   font-family: 'Lato', sans-serif;
+  color: #000;
 }
 
 a{
@@ -9,13 +10,26 @@ a{
 button{
   background-color: #EEFFFF;
   box-shadow: 1px 2px 3px #EEFFFF;
-  height: 135px;
+  height: 130px;
   border-radius: 50%;
-  margin-bottom: 25%;
+  margin-top: 2%;
 }
 
 button:hover{
   background-color: #F5FFFF;
+}
+
+.projects{
+  background-color: #00FFFF;
+}
+
+.follow{
+  background-color: #0088FF;
+}
+
+.speech{
+  background-color: #00CCFF;
+  color: #000088;
 }
 
 img{
