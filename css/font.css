@@ -7,10 +7,6 @@ a{
   text-decoration: none;
 }
 
-body{
-  max-width: 1000px;
-}
-
 button{
   background-color: #FFF;
   box-shadow: 1px 2px 3px #FFF;
@@ -42,6 +38,12 @@ aside, section{
 
 .collapse.navbar-collapse{
   background-color: #EEFFFF;
+}
+
+.fit{
+  max-width: 1000px;
+  object-fit: contain;
+  margin-left: 10%;
 }
 
 .follow{
@@ -77,12 +79,17 @@ aside, section{
 }
 
 @media (max-width: 768px) {
+
   .centerPhoto {
     left: inherit;
     position: inherit;
   }
 
-  .speech{
+  .fit{
     margin-left: 0px;
+  }
+
+  .speech{
+    margin-left: 10%;
   }
  }
