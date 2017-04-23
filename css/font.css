@@ -7,45 +7,29 @@ a{
   text-decoration: none;
 }
 
+body{
+  max-width: 1000px;
+}
+
 button{
   background-color: #FFF;
   box-shadow: 1px 2px 3px #FFF;
   height: 130px;
   border-radius: 50%;
   margin-top: 2%;
+  border: 0px;
 }
 
 button:hover{
   background-color: #F5FFFF;
 }
 
-.projects{
-  background-color: #D0FFFF;
-}
-
-.follow{
-  background-color: #CFFFFF;
-}
-
-.speech{
-  background-color: #C8FFFF;
-  color: #000088;
-}
-
 img{
   width: 25%;
 }
 
-#myBtn{
-  height: 50px;
-}
-
 .alert-info{
   box-shadow: 1px 2px 3px;
-}
-
-#restrictHeight{
-    height: 150px;
 }
 
 .alert-warning{
@@ -60,10 +44,45 @@ aside, section{
   background-color: #EEFFFF;
 }
 
-@media (min-width: 768px) {
+.follow{
+  background-color: #CFFFFF;
+}
+
+#logo{
+  border-radius: 50%;
+}
+
+#myBtn{
+  height: 50px;
+}
+
+.projects{
+  background-color: #D0FFFF;
+  margin-left: 90px;
+}
+
+#restrictHeight{
+    height: 150px;
+}
+
+.speech{
+  background-color: #C8FFFF;
+  color: #000088;
+  max-width: 900px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 768px) {
   .centerPhoto {
     left: inherit;
     position: inherit;
-    width: 150%;
+  }
+
+  .speech{
+    margin-left: 0px;
   }
  }
