@@ -51,6 +51,12 @@ aside, section{
 
 #logo{
   border-radius: 50%;
+  transition: border-radius .5s, transform .5s;
+}
+
+#logo:hover{
+  border-radius: 0%;
+  transform: rotate(360deg);
 }
 
 #myBtn{
@@ -80,6 +86,14 @@ aside, section{
 .text-muted{
   font-family: 'Lato', sans-serif;
   color: #000;
+}
+
+.titleAnim{
+  transition: font-size 1s;
+}
+
+.titleAnim:hover{
+  font-size: 48px;
 }
 
 @media (max-width: 768px) {
