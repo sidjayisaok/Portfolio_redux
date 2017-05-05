@@ -89,7 +89,7 @@ aside, section{
 }
 
 .titleAnim{
-  transition: font-size 1s;
+  transition: font-size .75s;
 }
 
 .titleAnim:hover{
@@ -108,6 +108,6 @@ aside, section{
   }
 
   .speech{
-    margin-left: 10%;
+    margin-left: auto;
   }
  }
