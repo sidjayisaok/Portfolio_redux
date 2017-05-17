@@ -9,6 +9,8 @@ body{
 body:before{
   background-image: url("../assets/background.jpg");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   content: "";
   height: 100%;
   width: 100%;
