@@ -3,7 +3,20 @@ a{
 }
 
 body{
-  background: linear-gradient(#ffffff, #EFEFEF);
+  background: linear-gradient(#ffffff, #8888aa);
+}
+
+body:before{
+  background-image: url("../assets/background.jpg");
+  background-attachment: fixed;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .1;
+  z-index: -1;
 }
 
 button{
