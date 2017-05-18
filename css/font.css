@@ -58,10 +58,12 @@ aside, section{
   max-width: 1000px;
   object-fit: contain;
   margin-left: 15%;
+  margin-right: 15%;
 }
 
 .follow{
   background-color: #CFFFFF;
+  max-width: 1000px;
 }
 
 #logo{
@@ -94,8 +96,9 @@ aside, section{
   margin-top: 80px;
   margin-bottom: 80px;
   margin-left: 50px;
+  margin-right: 50px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 25%;
 }
 
 .text-muted{
@@ -111,6 +114,24 @@ aside, section{
   font-size: 48px;
 }
 
+@media (min-width: 992px){
+  .container{
+    max-width: 970px;
+    margin-right: 5%;
+  }
+
+  .speech{
+    padding-bottom: 15%;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 750px;
+    margin-right: 5%;
+  }
+}
+
 @media (max-width: 768px) {
 
   .centerPhoto {
@@ -120,9 +141,12 @@ aside, section{
 
   .fit{
     margin-left: 0px;
+    margin-right: 0px;
   }
 
   .speech{
     margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
   }
  }
