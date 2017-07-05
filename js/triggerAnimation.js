@@ -9,6 +9,7 @@ $(document).ready(function(){
  var linkedin = '#linkedin';
  var twitter = '#twitter';
  var github = '#github';
+ var myGithub = ".myGithub";
  var contact = '#contact';
  var wordpress = '#wordpress';
  var offsetA = '75%';
@@ -34,6 +35,8 @@ $(document).ready(function(){
  callAnim(sniphy, offsetA);
 
  callAnim(contact, offsetA);
+
+  callAnim(myGithub, offsetA);
 
  callAnim(linkedin, offsetB);
 
