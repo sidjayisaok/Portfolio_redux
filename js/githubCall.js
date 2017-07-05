@@ -8,12 +8,18 @@
        var myDate = new Date(res.created_at);
     //    target DOM element
        var myGithub = $(".myGithub");
-    //    create a p and img DOM
+    //    create a p, a, and img DOM
        var p = $("<p>");
        var img = $("<img>");
+       var a = $("<a>");
     //    attached created information to DOM
        myGithub.append(p);
-       p.append(img);
+       p.append(a);
+    //    add attributes and append img to link
+       a.attr("href", "https://github.com/sidjayisaok");
+       a.attr("target", "_blank");
+       a.attr("rel", "noopener");
+       a.append(img);
     //    minor styling of DOM
        p.css("margin", "5%");
        p.css("padding", "5%");
@@ -28,9 +34,6 @@
     //    create inner attributes for image
        img.attr("src", res.avatar_url);
        img.attr("alt", "my Github Avatar");
-       img.attr("href", "https://github.com/sidjayisaok");
-       img.attr("target", "_blank");
-       img.attr("rel", "noopener");
     }).fail(function(err){
         // console log if there are any errors to dev terminal
         console.log('An error occured: ' + err.status);
