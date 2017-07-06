@@ -29,8 +29,8 @@
        p.append("Public Repos on Github : " + res.public_repos + "<br>");
        p.append("Public Gists on Github : " + res.public_gists + "<br>");
        p.append("Github acct. created on : " + myDate + "<br>");
-       p.append("Number of Github accts. I follow : " + res.followers + "<br>");
-       p.append("Github users currently following me : " + res.following + "<br>");
+       p.append("Number of Github accts. I follow : " + res.following + "<br>");
+       p.append("Github users currently following me : " + res.followers + "<br>");
     //    create inner attributes for image
        img.attr("src", res.avatar_url);
        img.attr("alt", "my Github Avatar");
