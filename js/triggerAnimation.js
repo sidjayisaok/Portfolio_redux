@@ -36,7 +36,7 @@ $(document).ready(function(){
 
  callAnim(contact, offsetA);
 
-  callAnim(myGithub, offsetA);
+ callAnim(myGithub, offsetA);
 
  callAnim(linkedin, offsetB);
 

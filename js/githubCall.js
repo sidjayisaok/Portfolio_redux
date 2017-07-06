@@ -26,10 +26,10 @@
        p.css("background-color", "#CFFFFF");
     //    append fetched information to DOM
        p.append("<br>" + res.name + " Github handle : " + res.login + "<br>");
-       p.append("Public repos on Github : " + res.public_repos + "<br>");
+       p.append("Public Repos on Github : " + res.public_repos + "<br>");
        p.append("Public Gists on Github : " + res.public_gists + "<br>");
        p.append("Github acct. created on : " + myDate + "<br>");
-       p.append("Number of Github followers : " + res.followers + "<br>");
+       p.append("Number of Github followers I follow : " + res.followers + "<br>");
        p.append("Github users currently following me : " + res.following + "<br>");
     //    create inner attributes for image
        img.attr("src", res.avatar_url);
