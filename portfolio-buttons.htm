@@ -1,0 +1,32 @@
+<div ng-repeat="portfolio in portfolio">
+    <!-- button -->
+    <div class="col-sm-6" id="banner">
+        <div id="restrictHeight">
+            <button type="button" class="heartBtn" data-toggle="modal" data-target="#{{portfolio.modal}}">
+                <div><h5><a href="{{portfolio.url}}">{{portfolio.name}}</a></h5></div>
+                <hr>
+                <img src="{{portfolio.image}}" alt="picture" class="image-responsive {{portfolio.class}}">
+            </button>
+        </div>
+    </div>
+    
+    <!-- modal -->
+    <div class="modal fade" id="{{portfolio.modal}}" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content alert alert-info">
+                <h3><p>{{portfolio.name}}</p></h3>
+                <a href="{{portfolio.github}}">
+                    <img src="{{portfolio.image}}" alt="picture" class="image-responsive site1">
+                </a>
+                <hr>
+                {{portfolio.summary}}
+            </div>
+        </div>
+    </div>    
+
+
+</div>
+
+
+
+

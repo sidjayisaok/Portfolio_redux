@@ -1,29 +1,29 @@
 //using waypoint.js to trigger events
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", function(){
 
  //variables used for transitions
- var banner = '#banner';
- var melange = '#melange';
- var movieGazer = '#movieGazer';
- var sniphy = '#sniphy';
- var linkedin = '#linkedin';
- var twitter = '#twitter';
- var github = '#github';
- var myGithub = ".myGithub";
- var contact = '#contact';
- var wordpress = '#wordpress';
- var offsetA = '75%';
- var offsetB = '90%';
+ const banner = '#banner';
+ const melange = '#melange';
+ const movieGazer = '#movieGazer';
+ const sniphy = '#sniphy';
+ const linkedin = '#linkedin';
+ const twitter = '#twitter';
+ const github = '#github';
+ const myGithub = ".myGithub";
+ const contact = '#contact';
+ const wordpress = '#wordpress';
+ const offsetA = '75%';
+ const offsetB = '90%';
 
  //function to execute animations when they appear on the screen via waypoint.js
  function callAnim(param, thisOffset){
-  // hide element on page load
-  $(param).css('opacity', 0);
-  //load element on scroll
-  $(param).waypoint(function() {
-      $(param).addClass('animated fadeInLeft');
-  }, { offset: thisOffset });
- }
+    // hide element on page load
+    $(param).css('opacity', 0);
+    //load element on scroll
+    $(param).waypoint(function() {
+        $(param).addClass('animated fadeInLeft');
+    }, { offset: thisOffset });
+   }
 
 //call the functions
  callAnim(banner, offsetA);

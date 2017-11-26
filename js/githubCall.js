@@ -23,7 +23,8 @@
     //    minor styling of DOM
        p.css("margin", "5%");
        p.css("padding", "5%");
-       p.css("background-color", "#CFFFFF");
+       p.css("background-color", "#003A88");
+       p.css("color", "#ffffff");
     //    append fetched information to DOM
        p.append("<br>" + res.name + " Github handle : " + res.login + "<br>");
        p.append("Public Repos on Github : " + res.public_repos + "<br>");

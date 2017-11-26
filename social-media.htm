@@ -1,0 +1,10 @@
+<div ng-repeat="social in social">
+    <!-- image -->
+    <div class="text-center col-sm-2" id="{{social.id}}">
+        <div class="alert centerPhoto">
+          <a href="{{social.url}}" target="_blank" rel="noopener"><img src="{{social.image}}" class="image-responsive {{social.class}}"></a>
+        </div>
+    </div>
+    <!-- spacer -->
+    <div class="col-sm-1"></div>
+</div>

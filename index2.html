@@ -11,7 +11,6 @@
 		SidJayIsAOK
 	</title>
 
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -20,7 +19,7 @@
 
 </head>
 
-<body class="fit">
+<body class="fit" ng-app="portfolioApp" ng-controller="portfolioController">
 
 <header>
 	
@@ -56,41 +55,49 @@
 			
 			<div class="text-center speech">
 				<!--adding in svg-->
-				<svg id="logo" width="200" height="200" viewBox="0 0 200 200" preserveaspectratio="xMinYMid">
-					<rect x="0" y="0" width="200" height="200" />
-					<text x="70" y="150" fill="white">S
-						<tspan x="75" y="125">J</tspan>	
-					</text>
-				</svg>
-				<h5><p class="text-center col-sm-4 animated fadeInRight">
-					I'm just your friendly neighborhood programmer, ready to fight crime... or code away. Whichever one is your preference.
-				</p></h5>
-				<br>
 
-				<h5><p class="text-center col-sm-4 animated fadeInRight">
-					I've worked with JavaScript, Visual Basic, HTML, CSS, Bootstrap and PHP. Git and Bash are fundamentals.
-				</p></h5>
-				<br>
+				<div class="center-svg">
+					<svg id="logo" width="200" height="200" viewBox="0 0 200 200" preserveaspectratio="xMinYMid">
+						<rect x="0" y="0" width="200" height="200" />
+						<text x="70" y="150" fill="white">S
+							<tspan x="75" y="125">J</tspan>	
+						</text>
+					</svg>
+				</div>
 
-				<h5><p class="text-center col-sm-4 animated fadeInRight">
-					My main Javascript focuses include ES6, Node.js, jQuery, d3.js, and Angular.js. Nothing beats vanilla.js though.
-				</p></h5>
-				<br>
 
-				<h5><p class="text-center col-sm-4 animated fadeInRight">
-					I'm familiar with Object Oriented and Functional programming, but tend to favor Functional.
-				</p></h5>
-				<br>
-
-				<h5><p class="text-center col-sm-4 animated fadeInRight">
-					My professional background includes working with publishers, newspapers, non-profits and media firms.
-				</p></h5>
-				<br>
-
-				<h5><p class="text-center col-sm-4 animated fadeInRight">
-					Whether you think with the left side of your brain or right, I can relate.
-				</p></h5>
-				<br>	
+				<div class="organize-text">
+					<p class="animated fadeInRight">
+						I'm just your friendly neighborhood programmer, ready to fight crime... or code away. Whichever one is your preference.
+					</p>
+					
+	
+					<p class="animated fadeInRight">
+						I've worked with JavaScript, HTML, CSS, Bootstrap and PHP, Git and Bash.
+					</p>
+					
+	
+					<p class="animated fadeInRight">
+						My main Javascript focuses include ES6, Node.js, jQuery, d3.js, and Angular 1. Nothing beats vanilla.js though. Currently working on React.js and I hear good things about Vue.js.
+					</p>
+					
+	
+					<p class="animated fadeInRight">
+						I'm familiar with Object Oriented and Functional programming, but tend to favor Functional. Object Oriented has its uses, though.
+					</p>
+					
+	
+					<p class="animated fadeInRight">
+						My professional background includes working with publishers, newspapers, non-profits and media firms. I'm currently working in for a major global medical manufacturer's marketing department assisting with their online endeavors.
+					</p>
+					
+	
+					<p class="animated fadeInRight">
+						Whether you think with the left side of your brain or right, I can relate.
+					</p>
+					
+				</div>
+	
 			</div>
 
 		
@@ -106,110 +113,12 @@
 				<hr>
 			</div>
 
-
+		<!-- this is in portfolio-buttons.htm -->
 		<div class="projects speech">
 			<div class="row">
-				<div class="col-sm-6" id="banner">
-					<div id="restrictHeight">
-						<button type="button" class="heartBtn" data-toggle="modal" data-target="#blogModal">
-							<div><h5><a href="http://heartrangeapp.herokuapp.com/">Heart Range calculator</a></h5></div>
-							<hr>
-							<img src="assets/HeartRange.png" alt="picture" class="image-responsive site1">
-						</button>
-					</div>
-				</div>
-					<!--blog modal-->
-					<div class="modal fade" id="blogModal" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<div class="modal-content alert alert-info">
-								<h3><p>Heart Range Calculator</p></h3>
-								<img src="assets/HeartRange.png" alt="picture" class="image-responsive site1">
-								<hr>
-								<p>A heart range calculator using Angular.js.</p>
-								<p>Results are rendered on the fly.</p>
-								<p>Technology includes Angular.js, Node.js, jQuery, Animate.css.</p>
-								<p>Check out the <a href="https://github.com/sidjayisaok/Heart_rate_estimator">Github repo</a> for more information.</p>	
-							</div>
-						</div>
-					</div>
-			
-
-				<div class="col-sm-6" id="melange">
-					<div id="restrictHeight">
-						<button type="button" class="melangeBtn" data-toggle="modal" data-target="#melangeModal">
-							<div><h5><a href="https://melangeapp.herokuapp.com/">Melange: a d3.js project</a></h5></div>
-							<hr>
-							<img src="assets/Melange.png" alt="picture" class="image-responsive site2">
-						</button>
-					</div>
-				</div>
-
-				<!--melange modal-->
-					<div class="modal fade" id="melangeModal" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<div class="modal-content alert alert-info">
-								<h3><p>Melange</p></h3>
-								<img src="assets/Melange.png" alt="picture" class="image-responsive site2">
-								<hr>
-								<p>A website using d3.js to display information for several tools.</p> 
-								<p>The Websites include a restaurant calculator, a currency converter, a restaurant ratings aggregator, and a BMI calculator</p>
-								<p>Technology used: Bootstrap, d3.js, animate.css, node.js, ES6, jQuery and more.</p>
-								<p>Check out the <a href="https://github.com/sidjayisaok/melange">Github repo</a> for more information.</p>
-							</div>
-						</div>
-					</div>
-
-				<div class="col-sm-6" id="movieGazer">
-					<div id="restrictHeight">
-						<button type="button" class="gazerBtn" data-toggle="modal" data-target="#gazerModal">
-							<div><h5><a href="https://moviegazer-b969d.firebaseapp.com/">Movie Gazer</a></h5></div>
-							<hr>
-							<img src="assets/MovieGazer.png" alt="picture" class="image-responsive site3">
-						</button>
-					</div>
-				</div>
-
-				<!--Movie Gazer modal-->
-					<div class="modal fade" id="gazerModal" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<div class="modal-content alert alert-info">
-								<h3><p>Movie Gazer</p></h3>
-								<img src="assets/MovieGazer.png" alt="picture" class="image-responsive site3">
-								<hr>
-								<p>A website aggregating movie reviews using wikipedia and IMDb.</p> 
-								<p>The website is constantly in evolution, as I add more features to it that I learn.</p>
-								<p>Technology used: Bootstrap, d3.js, animate.css, jQuery and more.</p>
-								<p>Check out the <a href="https://github.com/sidjayisaok/OMDb-API-Test">Github repo</a> for more information.</p>
-							</div>
-						</div>
-					</div>
-
-				<div class="col-sm-6" id="sniphy">
-					<div id="restrictHeight">
-						<button type="button" class="sniphyBtn" data-toggle="modal" data-target="#sniphyModal">
-							<div><h5><a href="https://sniphyapp.herokuapp.com/?">Sniphy: random gifs</a></h5></div>
-							<hr>
-							<img src="assets/Sniphy.png" alt="picture" class="image-responsive site4">
-						</button>
-					</div>
-				</div>
-
-				<!--sniphy modal-->
-					<div class="modal fade" id="sniphyModal" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<div class="modal-content alert alert-info">
-								<h3><p>Sniphy</p></h3>
-								<img src="assets/Sniphy.png" alt="picture" class="image-responsive site4">
-								<hr>
-								<p>A website returning gifs via Giphy.</p> 
-								<p>The website is designed to be simple to use, allowing users to play and pause gifs, and share links to friends.</p>
-								<p>Technology used: Bootstrap, animate.css, jQuery and more.</p>
-								<p>Check out the <a href="https://github.com/sidjayisaok/Animaltastic">Github repo</a> for more information.</p>
-							</div>
-						</div>
-					</div>
-				</div>		
-			</div>
+				<portfolio-buttons></portfolio-buttons>
+			</div>		
+		</div>
 
 			<div class="speech">
 				<br>
@@ -256,40 +165,9 @@
 			<p class="text-muted text-center"><h4 class="titleAnim">Follow Sid Jay at:</h4></p>
 			<hr>
 
+<!-- this is in social-media.htm -->
 <div class="follow text-center col-sm-12">
-	
-	<div class="text-center col-sm-2" id="linkedin">
-	    <div class="alert centerPhoto">
-	      <a href="https://www.linkedin.com/in/sidjay?trk=nav_responsive_tab_profile" target="_blank" rel="noopener"><img src="assets/LinkedIn.png" class="image-responsive image1"></a>
-	    </div>
-	</div>
-
-	<div class="col-sm-1"></div>
-
-	<div class="text-center col-sm-2" id="twitter">
-	    <div class="alert centerPhoto">
-	      <a href="https://twitter.com/SidJayisAOK" target="_blank" rel="noopener"><img src="assets/Twitter.png" class="image-responsive image2"></a>
-	    </div>
-	</div>
-
-	<div class="col-sm-1"></div>
-
-	<div class="text-center col-sm-2" id="github">
-	    <div class="alert centerPhoto">
-	      <a href="https://github.com/sidjayisaok" target="_blank" rel="noopener"><img src="assets/GitHub.png" class="image-responsive image3"></a>
-	    </div>
-	</div>
-
-	<div class="col-sm-1"></div>
-
-	<div class="text-center col-sm-2" id="wordpress">
-	    <div class="alert centerPhoto">
-	      <a href="https://sidjayisaok.wordpress.com" target="_blank" rel="noopener"><img src="assets/Wordpress.png" class="image-responsive image4"></a>
-	    </div>
-	</div>
-
-	<div class="col-sm-1"></div>
-
+	<social-media></social-media>
 </div>
 
 </aside>
@@ -299,19 +177,24 @@
 	<div class="text-center text-muted speech">
 		<br />
 		<br />
-		<h4>&copy; Copyright 2016 Sid Jay</h4>
+		<h4>&copy; Copyright 2017 Sid Jay</h4>
 		<br />
-		<h6>This page uses <a href="https://getbootstrap.com/" target="_blank" rel="noopener">BootStrap</a>, <a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener">Animate.css</a>, and <a href="http://imakewebthings.com/waypoints/" target="_blank" rel="noopener">Waypoints.js</a></h6>
+		<h6>This page uses <a href="https://getbootstrap.com/" target="_blank" rel="noopener">BootStrap</a>, <a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener">Animate.css</a>, and <a href="http://imakewebthings.com/waypoints/" target="_blank" rel="noopener">Waypoints.js</a>. Built with Angular.</h6>
 	</div>
 
 </body>
 
+ <!--Angular CDN-->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script type="text/javascript" src="js/animate.js"></script>
 <script type="text/javascript" src="js/triggerAnimation.js"></script>
 <script type="text/javascript" src="js/githubCall.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
 
 
 </html>
