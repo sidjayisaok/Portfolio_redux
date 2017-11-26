@@ -113,8 +113,7 @@ aside, section {
 .fit {
   max-width: 1000px;
   object-fit: contain;
-  margin-left: 15%;
-  margin-right: 15%; }
+  margin: 0 auto; }
 
 .follow {
   background-color: #003A88;
