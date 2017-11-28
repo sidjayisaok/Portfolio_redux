@@ -1,41 +1,57 @@
-// ajax jQuery call to fetch github information
-    $.ajax({
-        url: "https://api.github.com/users/sidjayisaok",
-        method: 'GET',
-        dataType: 'json'
-    }).done(function(res){
-    //    convert date to useable format
-       var myDate = new Date(res.created_at);
-    //    target DOM element
-       var myGithub = $(".myGithub");
-    //    create a p, a, and img DOM
-       var p = $("<p>");
-       var img = $("<img>");
-       var a = $("<a>");
-    //    attached created information to DOM
-       myGithub.append(p);
-       p.append(a);
-    //    add attributes and append img to link
-       a.attr("href", "https://github.com/sidjayisaok");
-       a.attr("target", "_blank");
-       a.attr("rel", "noopener");
-       a.append(img);
-    //    minor styling of DOM
-       p.css("margin", "5%");
-       p.css("padding", "5%");
-       p.css("background-color", "#003A88");
-       p.css("color", "#ffffff");
-    //    append fetched information to DOM
-       p.append("<br>" + res.name + " Github handle : " + res.login + "<br>");
-       p.append("Public Repos on Github : " + res.public_repos + "<br>");
-       p.append("Public Gists on Github : " + res.public_gists + "<br>");
-       p.append("Github acct. created on : " + myDate + "<br>");
-       p.append("Number of Github accts. I follow : " + res.following + "<br>");
-       p.append("Github users currently following me : " + res.followers + "<br>");
-    //    create inner attributes for image
-       img.attr("src", res.avatar_url);
-       img.attr("alt", "my Github Avatar");
-    }).fail(function(err){
-        // console log if there are any errors to dev terminal
-        console.log('An error occured: ' + err.status);
-    });
+ //  now in vanilla.js
+ var xhr = new XMLHttpRequest();
+     xhr.open('GET', 'https://api.github.com/users/sidjayisaok');
+     xhr.onload = function() {
+        if (xhr.status === 200) {
+           var res = xhr.responseText;
+           var result = JSON.parse(res);
+           var myDate = new Date(result.created_at);
+           var myGithub = document.getElementsByClassName('myGithub')[0];
+           var div = document.createElement('div');
+           var p1 = document.createElement('p');
+           var p2 = document.createElement('p');
+           var p3 = document.createElement('p');
+           var p4 = document.createElement('p');
+           var p5 = document.createElement('p');
+           var p6 = document.createElement('p');
+           var img = document.createElement('img');
+           var a = document.createElement('a');
+           myGithub.appendChild(div);
+           div.appendChild(a);
+           a.href = "https://github.com/sidjayisaok";
+           a.target = "_blank";
+           a.rel = "noopener";
+           a.appendChild(img);
+           div.style.margin = "5%";
+           div.style.padding = "5%";
+           div.style.backgroundColor = '#003A88';
+           div.style.color = "#FFFFFF";
+           p1.append(result.name + " Github handle : " + result.login);
+           p2.append("Public Repos on Github : " + result.public_repos);
+           p3.append("Public Gists on Github : " + result.public_gists);
+           p4.append("Github acct. created on : " + myDate);
+           p5.append("Number of Github accts. I follow : " + result.following);
+           p6.append("Github users currently following me : " + result.followers);
+           div.appendChild(p1);
+           div.appendChild(p2);
+           div.appendChild(p3);
+           div.appendChild(p4);
+           div.appendChild(p5);
+           div.appendChild(p6);
+           img.src = result.avatar_url;
+           img.alt = "My Github Avatar";
+        }
+        else {
+            console.log('An error occured' + xhr.status);
+        }
+    };
+    xhr.send();
+
+
+
+   
+
+
+
+
+
